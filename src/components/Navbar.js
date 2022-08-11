@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { UserContext } from "../App";
 
 
-const NavBar = ()=>{
+const NavBar = ()=>{ 
   const {state,dispatch} = useContext(UserContext)
   const renderList = ()=>{
     if(state){
@@ -12,7 +12,7 @@ const NavBar = ()=>{
             <li><Link to="/create">Create Post</Link></li>
       ]
     } else {
-        return [
+        return [   
            <li><Link to="/signin">Signin</Link></li>,
            <li><Link to="/signup">Signup</Link></li>
         ]
@@ -36,7 +36,7 @@ return(
     </div>
   </nav>
 
-    )
+    ) 
 }
 
 export default NavBar;

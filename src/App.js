@@ -8,11 +8,11 @@ import Signin from "./components/screens/SignIn";
 import Signup from "./components/screens/Signup"; 
 import Profile from "./components/screens/Profile";
 import CreatePost from "./components/screens/CreatePost";
-import {reducer,initialState} from "./reducers/userReducers"
+import {reducer,initialState} from "./reducers/userReducers"  
 
 
 export const UserContext = createContext()
-
+ 
 const Routing = ()=>{
   const history = useHistory()
   const {state,dispatch} = useContext(UserContext)
